@@ -1,38 +1,119 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	width: fit-content;
+	color: #282c34;
+	margin: 3rem auto;
+}
+.App-logo {
+	width: fit-content;
+	margin: 0;
+	font-size: 2.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.border {
+	margin: 0.9rem auto;
+	border-top: 0.3rem solid #61dafb;
+	width: 6rem;
 }
+main {
+	width: 60rem;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+.nav-cont {
+	width: 15rem;
+	min-width: 15rem;
+}
+button {
+	border: none;
+	background: transparent;
+	font-size: 1.5rem;
+	margin-bottom: 0.7rem;
+	cursor: pointer;
+	padding-left: 2rem;
+}
+.right-cont {
+	padding-right: 2rem;
+	width: 45rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+	text-align: left;
+}
+p {
+	margin: 0 0 0.5rem 0;
+	color: #617d98;
+}
+.role {
+	color: rgba(9, 9, 9);
+	font-size: 1.5rem;
+	width: fit-content;
+}
+.name {
+	background: #dae2ec;
+	width: fit-content;
+	padding: 0.3rem 0.6rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+.date {
+	width: fit-content;
+}
+.skills {
+	margin: 1rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.icon {
+	color: #37bcc8;
+}
+.skill-item {
+	margin-left: 1rem;
+}
+.active_btn {
+	border-left: 0.15rem solid #2caeba;
+	color: #2caeba;
+}
+@media screen and (max-width: 480px) {
+	.App {
+		margin: auto;
+	}
+	.App-header {
+		margin: 1rem auto;
+	}
+	main {
+		width: 16rem;
+		display: inline;
+	}
+	.nav-cont {
+		width: 20rem;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin: 1rem auto;
+	}
+	button {
+		font-size: 1rem;
+		padding: 0;
+		padding-bottom: 0.3rem;
+	}
+	.right-cont {
+		padding: 1rem;
+    padding-top: 0;
+		width: auto;
+	}
+  .name, .role{
+    font-size: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+  .date, .skill-item{
+    font-size: .9rem;
   }
+
+	.active_btn {
+		border: none;
+		border-bottom: 0.15rem solid #2caeba;
+	}
 }
